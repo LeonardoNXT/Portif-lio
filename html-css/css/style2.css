@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Poppins",sans-serif;
+
+
+}
+body {
+    background-image: url(./img/arabian.desert.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+.conteiner-all {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.haed {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    width: 1800px;
+    
+}
+.page-a {
+    display: flex;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.753);
+    gap: 10px;
+}
+.menu-a  {
+    display: flex;
+    gap: 45px;
+    color: white;
+
+}
+.menu-a a {
+    color: white;
+}
+
+.conteiner-1 {
+    width: 1000px;
+    height: 600px;
+    background: linear-gradient(168deg, rgba(255, 255, 255, 0.24) 0%, rgba(1, 0, 64, 0.164) 100%);
+    backdrop-filter: blur(20px);
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px rgb(0, 0, 0);
+    transition: all 1s;
+    animation: aparecer 1s forwards;
+    margin-top: -100px;
+    
+    
+}
+@keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+#box-1, #box-2, #box-3 {
+    color: white;
+    background-color: transparent;
+    width: 333.33px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    transition: all 1s;
+    border-radius: 50px;
+    
+
+
+}
+#box-1 {
+    border-left: 1px solid #000000;
+}
+
+#box-2{
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+#box-3{
+    border-right: 1px solid #0a0a0a00;
+}
+
+#box-2, #box-3 span {
+    color: white ;
+}
+#box-2 p {
+    margin-left:10px ;
+    margin-right:10px ;
+}
+#box-3:hover {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    align-self: center;
+    height: 630px;
+    width: 444px;
+
+    p {
+        color: rgb(78, 78, 78);
+    }
+    #text-box{
+        color: black;
+        font-size: 25px;
+        text-wrap: nowrap;
+    }
+    #text-box span {
+        color: rgb(56, 56, 255);
+    }
+
+    #list-all {
+        color: rgb(63, 63, 63);
+        margin-top: 30px;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    #list-all span {
+        color: rgb(56, 56, 255);
+    }
+    #paragraf-all {
+        font-size: 19px;
+}
+}
+#box-2:hover {
+    background: rgb(255,255,255);
+    
+    position: relative;
+    align-self: center;
+    height: 630px;
+    width: 444px;
+    box-shadow: 0 0 30px black;
+    p {
+        color: rgb(78, 78, 78);
+    }
+    #text-box{
+        color: black;
+        font-size: 25px;
+        text-wrap: nowrap;
+    }
+    #text-box span {
+        color: rgb(56, 56, 255);
+    }
+    #list-all {
+        color: rgb(63, 63, 63);
+        margin-top: 30px;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    #list-all span {
+        color: rgb(56, 56, 255);
+    }
+    #paragraf-all {
+        font-size: 19px;
+        max-width: 374px;
+    }
+    #img {
+        opacity: 1;
+        top:94%;
+        visibility: visible;
+        height: 35px;
+    }
+    #img-pacote {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 10px;
+    }
+
+
+}
+
+#box-1:hover {
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    align-self: center;
+    height: 630px;
+    width: 444px;
+    box-shadow: 0 0 20px black;
+    p {
+        color: rgb(78, 78, 78);
+    }
+    #text-box{
+        color: black;
+        font-size: 25px;
+        text-wrap: nowrap;
+    }
+    #text-box span {
+        color: rgb(56, 56, 255);
+        font-size: 25px;
+    }
+    #list-all {
+        color: rgb(63, 63, 63);
+        margin-top: 30px;
+        font-size: 17px;
+        margin-left: 20px;
+    }
+
+    #list-all span {
+        color: rgb(56, 56, 255);
+    }
+    #paragraf-all {
+        font-size: 19px;
+    }
+}
+
+#text-box {
+    text-align: center;
+    padding-top: 80px;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+#box-1 span {
+    color: rgb(0, 0, 255);
+}
+#text-box span {
+    
+    transition: all 1s;
+}
+
+
+#btn-a {
+
+    position: fixed;
+    top: 85%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.253);
+    color: rgb(0, 0, 0);
+    align-items: center;
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: all 1s;
+}
+
+#btn-a:hover {
+    background-color: rgb(122, 124, 255);
+    box-shadow: 0 0 10px rgb(138, 150, 255);
+    padding: 20px;
+    
+
+    color: rgb(0, 0, 0);
+}
+#logo1{
+    margin-left: 20px;
+    height: 70px;
+    width: 70px;
+}
+
+@keyframes test1 {
+    when{cursor: pointer;}
+    from{background-color: transparent;}
+    to {background-color: white;}
+}
+#box-1 p {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: lighter;
+    transition: all 1s; 
+}
+#box-2 p {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: lighter;
+    transition: all 1s; 
+}
+#box-3 p {
+    display: flex;
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: lighter;
+    transition: all 1s; 
+}
+
+#list-all {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30px;
+    justify-content: left;
+    text-align: left;
+    list-style: none;
+    text-align: center;
+    transition: all 1s;
+    margin-top: 20px;
+
+
+}
+#list-all::before {
+    content: '🔥';
+    text-align: center;
+}
+
+#list-all span {
+    color: rgb(255, 255, 255);
+    transition: all 1s;
+} 
+#img {
+    height: 20px;
+    position: absolute;
+    top: 90%;
+    opacity: 0;
+    animation-name: test2 ;
+    visibility: hidden;
+    animation-duration: 2s;
+    transition: opacity 2s ease-in-out
+    
+}
+.tilte-2s {
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.596);
+    transition: all 0.5s;
+}
+.tilte-2s:hover {
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 20px white;
+    text-align: center;
+}
+#img-pacote {
+    height: 230px;
+    width: 180px;
+    background-image: url(./img/microsoft\ 200\ 250px\ wallpepe.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.445);
+    opacity: 0;
+    transition: opacity ease-in-out 2s;
+    position: absolute;
+    gap: 20px;
+    left: 45%;
+}
+.conteiner-2 {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}

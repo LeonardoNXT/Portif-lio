@@ -135,7 +135,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(./img/arabian.desert.jpg) ;
+    background-image: url(./img/multigender-lgbtq-3840x2160-11903.jpg) ;
     border-top-left-radius: 20px ;
     border-top-right-radius: 20px ;
     background-position: center;
@@ -167,7 +167,33 @@ header {
     font-family: 'Poppins';
     display: flex;
     overflow: hidden;
+    transition: all 1s;
+    animation: aparecer 1.2s forwards;
     
+}
+@keyframes aparecer {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+#box:hover {
+    height: 95%;
+    width: 85%;
+    box-shadow: 0 0 40px black;
+
+    #img-proper {
+        filter: grayscale(0%);
+        box-shadow: 0 0 200px wheat;
+    }
+    #name-proper {
+        font-size: 40px;
+        filter: brightness(150%);
+        text-align: center;
+    }
 }
 .title-as {
     margin-top: 40px;
@@ -186,17 +212,22 @@ header {
     font-size: 30px;
     filter: brightness(150%);
     margin-top: 30px;
+    transition: all 1s;
 }
 #img-proper {
     display: flex;
     height: auto;
-    
+    filter: grayscale(100%);
     width: 500px;
     min-width: 30%;
     min-height: 200px;
     align-self: center;
     border-radius: 50%;
     box-shadow: 0 0 200px white;
+    transition: all 1s;
+}
+#img-proper:hover {
+    width: 550px;
 }
 #text-2 {
     text-align: justify;
@@ -242,12 +273,25 @@ header {
     box-shadow: 0 0 200px rgb(0, 0, 0);
 
     transition: all 1s;
-
 }
 .card-config:hover{
-    box-shadow: 0 0 200px rgb(34, 49, 78) ;
+    box-shadow: 0 0 200px rgb(21, 66, 155) ;
     background: rgb(0,0,0);
-    background: linear-gradient(36deg, rgba(0, 0, 0, 0.541) 0%, rgba(85,88,115, 0.205) 100%);
+    background: linear-gradient(36deg, rgba(255, 255, 255, 0.247) 0%, rgba(85,88,115, 0.205) 100%);
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows:  1fr 0.5fr;
+
+
+    #box-all {
+        box-shadow: 0 0 40px wheat;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+
+    #card-all {
+        
+        width: 90%;
+    }
 
 }
 
@@ -255,11 +299,14 @@ header {
     border-radius: 50%;
     height: 150px;
     width: 150px;
-    background-color: rgb(59, 59, 59);
-    margin-bottom: 30px;
+    background-color: rgba(143, 143, 143, 0.753);
+    margin-bottom: 40px;
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 1s;
+    box-shadow: 0 0 20px rgb(41, 37, 37);
     transition: all 1s;
     
 }
@@ -275,6 +322,7 @@ header {
     border-radius: 40px;
     grid-row-start: 1;
     grid-row-end: 3;
+    box-shadow: 0 0 20px wheat;
 }
 #card-all  img {
     height: auto;
@@ -335,7 +383,7 @@ header {
 }
 .btn-config {
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 #ir-button {
     margin-top: 20px;

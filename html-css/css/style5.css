@@ -310,9 +310,6 @@ main {
     .right-page-all img {
         max-width: 250px;
     }
-    #social-media-all {
-
-    }
 }
 
 @media (min-width: 1024px) and (max-width: 1277px) {
@@ -395,8 +392,6 @@ main {
         justify-content: center;
 
     }
-    .rodape {
-    }
     #apresentation-all {
         margin-top: 20px;
         margin-left: 60px;
@@ -442,18 +437,11 @@ main {
 
 }
 @media (max-height: 600px) {
-    .rodape {
-        
-    }
     .main {
         height: 115vh;
     }
     .right-page-all img {
         width: 400px;
-    }
-    #social-media-all {
-
-
     }
     #social-media-all img {
         width: 50px;

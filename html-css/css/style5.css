@@ -66,14 +66,16 @@ main {
     display: flex;
     width: 50%;
     height: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    
-    
+    flex-direction: column;  
 }
 #apresentation-all {
     margin-left: 90px;
+    margin-top: 100px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
     
 
 }
@@ -255,7 +257,7 @@ main {
     }
 }
 
-#imgs {
+#imgs, #imgs-1 {
     max-width: 250px;
     width: 60px;
     max-height: 250px;
@@ -264,18 +266,21 @@ main {
     box-shadow: 0 0 20px rgb(0, 174, 255);
     
 }
-#social-media-all {
+#imgs-1 {
     display: flex;
-    justify-self: center;
-    margin-top: 40px;
-    margin-left: 50px;
-    position: absolute;
-    top: 86%;
-    
+    margin-left: 40px;
 }
+.rodape {
+    display: flex;
+    align-items: center;
+    
+    justify-content: center;
+    height: 30%;
+    align-items: center;
+}
+
 #social-comfig-all {
     display: flex;
-    gap: 50px;
 }
 
 @media(max-width: 1023px) {
@@ -306,8 +311,7 @@ main {
         max-width: 250px;
     }
     #social-media-all {
-        top: 87%;
-        margin-left: 90px;
+
     }
 }
 
@@ -343,6 +347,7 @@ main {
         width:  80%;
         height: 70%;
     }
+
 }
 
 
@@ -351,21 +356,29 @@ main {
         width: 50%;
         height: 100%;
     }
+    #apresentation-all {
+        height: 85%;
+    }
 }
 
-@media (max-width: 500px){
+@media (max-width: 500px) and (min-width: 412px){
     .header{
-        width: 100%;
-        margin-left: 0;
+        width: 80%;
+        margin-right: 20px;
+        margin-left: 20px;
         flex-wrap: wrap;
         align-items: center;
-        backdrop-filter: blur(0px);
+        backdrop-filter: blur(40px);
+        border-radius: 50px;
+        justify-content: center;
     }
     .dev-proper {
-        margin-left: 88px;
+        gap: 10px;
+        margin: 0;
     }
     .link-all {
-        margin-left: 50px;
+        margin: 0;
+        font-size: 20px;
     }
     .right-page {
         width: 75%;
@@ -382,9 +395,7 @@ main {
         justify-content: center;
 
     }
-    #social-media-all {
-        top: 112%;
-        margin-left: 60px;
+    .rodape {
     }
     #apresentation-all {
         margin-top: 20px;
@@ -393,10 +404,47 @@ main {
     
     }
     #apresentation-all h1 {
+        
         font-size: 40px ;
     }
 }
+@media (max-width: 420px) {
+    .header {
+        width: 90%;
+        margin-right: 20px;
+        margin-left: 20px;
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .dev-proper {
+        margin: 0;
+        gap: 10px;
+
+    }
+    .dev-proper p {
+        font-weight: bold;
+    }
+    .link-all {
+        font-size: 20px;
+        margin-top: 10px;
+        
+    }
+    #links-all-config {
+        gap: 40px;
+    }
+    .right-page {
+        width: 75%;
+        height: 80%;
+    }
+    .main {
+        height: 110vh;
+    }
+
+}
 @media (max-height: 600px) {
+    .rodape {
+        
+    }
     .main {
         height: 115vh;
     }
@@ -404,10 +452,20 @@ main {
         width: 400px;
     }
     #social-media-all {
-        top: 118%;
-        margin-left: 50px;
+
+
     }
     #social-media-all img {
         width: 50px;
     }
+
+}
+@media (min-width: 1026px) {
+        .rodape {
+            
+            justify-content: start;
+        }
+        #social-media-all {
+            margin-left: 90px;
+        }
 }

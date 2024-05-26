@@ -42,3 +42,19 @@ Aqui eu relatarei alguns erros que aconteceram nesta versão
 
 ## Corrigidos
 - Botões Não clicáveis
+
+##Quita Atualização 1.2V
+(26/05/24) 13:17
+
+Agora, eu termino as partes principais do segundo portifólio, em que a área de contato está terminada. No entanto, não foi se dado atenção a responsividade nesta atual versão.
+
+## Adicionados
+- Index 8 (Página Contato)
+- Aprendizado de novas funções para o futuro 1.3
+
+## New Version
+Na próxima versão será dada a atenção a responsividade e, talvez, o início a um novo projeto de "Loja de café".
+
+### Erros
+
+- Falta de responsividade na área de contato
